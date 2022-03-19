@@ -101,11 +101,11 @@ map.on('style.load', function () {
 					onAdd: function (map, mbxContext) {
 						//light set
 						// create two three.js lights to illuminate the model
-						var directionalLight = new THREE.DirectionalLight(0xffffff);
+						var directionalLight = new THREE.DirectionalLight(0xfee9dc);
 						directionalLight.position.set(0, -7000, 1000).normalize();
 						tb.scene.add(directionalLight);
 
-						var directionalLight2 = new THREE.DirectionalLight(0xffffff);
+						var directionalLight2 = new THREE.DirectionalLight(0xfee9dc);
 						directionalLight2.position.set(0, 7000, 1000).normalize();
 						tb.scene.add(directionalLight2);
 							let modelFarm = {
