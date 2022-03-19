@@ -8,6 +8,7 @@ let bounds = [
 ];
 //universal model scales
 let scaleBuilding = 500;
+let scaleTree = 800;
 //model origin variables
 let originFarm = [16.657991116569747, 35.20442984585782];
 let originWizard = [23.55753204731775, 29.824589523135046];
@@ -101,11 +102,11 @@ map.on('style.load', function () {
 					onAdd: function (map, mbxContext) {
 						//light set
 						// create two three.js lights to illuminate the model
-						var directionalLight = new THREE.DirectionalLight(0xfee9dc);
+						var directionalLight = new THREE.DirectionalLight(0xfdd4b8);
 						directionalLight.position.set(0, -7000, 1000).normalize();
 						tb.scene.add(directionalLight);
 
-						var directionalLight2 = new THREE.DirectionalLight(0xfee9dc);
+						var directionalLight2 = new THREE.DirectionalLight(0xfdd4b8);
 						directionalLight2.position.set(0, 7000, 1000).normalize();
 						tb.scene.add(directionalLight2);
 							let modelFarm = {
@@ -140,7 +141,7 @@ map.on('style.load', function () {
 									type: 'gltf',
 									obj: 'https://cdn.jsdelivr.net/gh/voyageur-studio/karto@main/Karto_Models/forest_shrowded.glb', //model url
 									units: 'meters', //units in the default values are always in meters
-									scale: scaleBuilding,
+									scale: scaleTree,
 									rotation: { x: 90, y: 0, z: 0 }, //default rotation
 									anchor: 'center'
 							}
