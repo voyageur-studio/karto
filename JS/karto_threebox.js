@@ -8,7 +8,7 @@ let bounds = [
 ];
 //universal model scales
 let scaleBuilding = 500;
-let scaleTree = 800;
+let scaleTree = 1000;
 //model origin variables
 let originFarm = [16.657991116569747, 35.20442984585782];
 let originWizard = [23.55753204731775, 29.824589523135046];
